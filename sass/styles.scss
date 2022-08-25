@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Roboto+Mono:wght@300&display=swap');
+/*
+
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+    */
+
+$bg-color-orange: orange;
+
+$colores-redes: (
+    facebook: #3b5998,
+    twitter: #00acee,
+    instagram: #C13584,
+    youtube: #c4302b
+);
+
+@mixin sombras(){
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px black;
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    header{
+        position: fixed;
+        min-width: 100%;
+        nav{
+            background-color: #ffffff;
+            .container-fluid{
+                .logo{
+                    background-image: url("../assets/icono.png");
+                    background-size: cover; 
+                    background-repeat: no-repeat;
+                    padding: 5px;
+                    min-height: 50px;
+                    min-width: 40px;
+                
+                    transition: all .3s ease-in-out;
+
+                }
+                .logo:hover{
+                    transform: rotate(-180deg);
+                }
+                .collapse{
+                    ul{
+                        li{
+                            .fa-facebook-f{
+                                color: black;
+                            }
+                            .fa-twitter{
+                                color: black;
+                            }
+                            .fa-instagram{
+                                color: black;
+                            }
+                            .fa-youtube{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        min-height: 100%;
+        z-index: -2;
+        min-height: 90vh;
+        .scrollDist{
+
+        }
+        .sky-container{
+            z-index: -1;
+            min-height: 80vh;
+            svg{
+                mask{}
+                .sky{
+                    min-width: 100%;
+                }
+                .elemento1{
+                    background-color: aquamarine;
+                    min-width: 10px;
+                    min-height: 10px;
+                    z-index: -1;
+                }
+                .cloud2{}
+                .cloud3{}
+                .cloud4{}
+                .cloud1{}
+                .flag{}
+                .hello{
+                    font-size: 3rem;
+                    font-family: 'Roboto Mono', monospace;
+                    
+
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+  
+  
+
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+    transform-origin: top center;
+    z-index: -4;
+}
+
+.clouds {
+    z-index: -6;
+    background-image: url("https://assets.codepen.io/557388/clouds.png");
+}
+
+
+
+
+.lookingfor {
+  font-size: 0.3rem;
+  color: black;
+}
+  
+  
