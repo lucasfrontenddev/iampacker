@@ -21,7 +21,7 @@ var dict = {
 
     },
 
-    "I am an experienced skydiver (8 years).": {
+    "I am a skydiver with over 8 years of experience.": {
         pt: "Tenho 8 anos de experiência como paraquedista"
     },
 

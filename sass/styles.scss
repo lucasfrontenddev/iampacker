@@ -33,11 +33,6 @@ body{
             #menu{
                 ul{
                     li{
-                        .logo{
-                            background-image: url('/assets/icono.png');
-                            min-height: 200px;
-                            min-width: 200px;
-                        }
                     }
                 }
             }
@@ -49,6 +44,7 @@ body{
             height: 100vh;
             position: relative;
             overflow: hidden;
+            /* Para 800px */   
             /*
             height: auto;
             */
@@ -58,23 +54,41 @@ body{
                 position: absolute;
             }
             .seccion:nth-child(1){
-                background-color: #515151;
+                background: linear-gradient(to top, #45749c, #185197);
+                
                 svg{
+
+                    @media only screen and (max-width: 1020px) {  
+                        height: 150vh;
+                        } 
+                    .logo{
+                        background-color: #ffffff;
+                        color: #c4302b;
+                        font-size: 5rem;
+                    }
                     text{
                         font-family: 'Roboto Mono', monospace;
                         font-size:2rem;
                         text-align:center;
-                    }
-                    .hello{
                         
+                    }
+                    .hey{
+                        font-size: 2rem;
                     }
                     .i_am{
                         font-size:3rem;
+                    }
+                    .packer_rigger{
+                        font-size: 4rem;
                     }
                     .presentation{
                         font-size:1rem;
                     }
                     .sky{
+
+                    }
+                    .rotate{
+                        transform: scaleX(-1);
                     }
 
                     .cloud2{}
@@ -111,7 +125,11 @@ body{
 }
 
 
-
+@media only screen and (max-width: 820px) {  
+    .hey{
+        font-size: 0.5rem;
+    }
+} 
 
 
 
