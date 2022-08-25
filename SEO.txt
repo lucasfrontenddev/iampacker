@@ -1,0 +1,3 @@
+etiqueta meta 
+    <meta name="description" content="Alimentación a base de respeto y libre de crueldad.">    
+    <meta name="keywords" content="comida vegana, dieta vegana, queso vegano, carne vegana, pan vegano, las oreos son veganas">

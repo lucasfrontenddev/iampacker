@@ -2,54 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Les Viandas</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Favicon -->
-    <link href="./assets/logo-cucharas.svg" rel="icon">
+    <link href="./assets/icono.png" rel="icon">
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Lucas</title>
 </head>
 
 <body>
-    <header>
-        <!-- navegador - menú -->
+
+    <header class="init">
         <nav class="navbar navbar-expand-md bg-color-orange">
             <div class="container-fluid">
-            <!-- logo con background image -->
-                <div class="logo">
-                </div>
-            <!-- boton de menú -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-            <!-- elementos del menú colapsable -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-black trn" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="../pages/nosotros.html">Nosotros</a>
+                          <a class="nav-link text-black" href="#">English</a>
+                            <a href="?lang=pt" class="cepi-url panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h3>Web - Português</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="../pages/galeria.html">Galería</a>
+                            <div class="logo">
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="./pages/locales.html">Locales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="./pages/contacto.html">Contacto</a>
+                            <div class="logo">
+                            </div>
                         </li>
                     </ul>
-    
+
                     <hr>
     
-                <!-- enlaces redes sociales -->
                     <ul class="navbar-nav flex-row flex-wrap text-black">
                         <li class="nav-item col-3 col-md-auto p-3">
                             <div class="fab fa-facebook-f"></div>
@@ -67,37 +79,179 @@
                             <div class="fab fa-youtube"></div>
                         </li>
                     </ul>
-                </div>
-            </div>  
+                </div>             
+            </div>
         </nav>
-        <!-- fin navegador - menú -->
     </header>
 
-    <!-- hero -->
     <main>
-        <div id="hero" class="d-flex align-items-center justify-content-center">
-            <!--div para que el centrado con flex no ubique al h1, al div y al h3 en linea-->
-            <div>
-                <h1>Les viandas</h1>
-                <div class="humo"></div>
-                <h3>Ni leche ni huevo</h3>
-            </div>
+        <div class="animation__container">
+            <section class="seccion seccion__1">
+              <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                <mask id="m">
+                  <g class="cloud1">
+                    <rect fill="#fff" width="100%" height="801" y="799" />
+                    <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+                  </g>
+                </mask>
+                <image class="sky" xlink:href="https://assets.codepen.io/721952/sky.jpg"  width="1200" height="590" />   
+                <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+                <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+                <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+                <text fill="#fff" x="420" y="150" class="trn">Hello, my name is Lucas</text>
+                <text fill="#fff" x="420" y="200" class="trn">I am</text>
+                <text fill="#fff" x="420" y="250">Packer</text>
+
+                <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+                
+                <g mask="url(#m)">
+                  <rect fill="#fff" width="100%" height="100%" />      
+                  <text x="420" y="200" fill="#162a43" class="trn">I am</text>
+                  <text x="420" y="250" fill="#162a43">Rigger</text>
+                  <text x="420" y="350" fill="#162a43" class="presentation trn">Lorem ipsum dolor sit amet, </text>
+                  <text x="420" y="370" fill="#162a43" class="presentation trn">adipisicing elit. Maiores dolores voluptatum obcaecati, vitae tempore voluptates reprehenderit ullam quae debitis modi! Dicta debitis, incidunt est nesciunt culpa a dolorum nulla corporis?</text>
+                  <text x="420" y="390" fill="#162a43" class="presentation trn">vitae tempore voluptates reprehenderit ullam quae debitis modi!</text>
+                </g>
+                
+                <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+              </svg> 
+            </section>
+            <section class="seccion seccion__2">
+            </section>
+            <section class="seccion seccion__3 border border-dark">
+              <div class="m-4 p-4"></div>
+                <p>Estoy buscando </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, harum? Reprehenderit soluta delectus cupiditate voluptates neque atque cum, dolorem quo corporis quaerat quod animi repellat provident rerum ea sit laboriosam.</p>
+            </section>
+            <section class="seccion seccion__4">
+                <h1>4</h1>
+            </section>
         </div>
     </main>
     <!-- fin hero -->
     
-    <!-- footer -->
-    <footer class="container-fluid bg-color-orange">
-        <div class="row">
-            <div class="d-flex justify-content-center firma">                   
-                <p>&copy; Derechos reservados. Diseñado por <a href="https://www.lucasmartinez.com" class="lead mi-nombre">Martinez Lucas</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!-- fin footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  <!-- Left -->
+  <div class="me-5 d-none d-lg-block">
+    <span>Get connected with us on social networks:</span>
+  </div>
+  <!-- Left -->
+
+  <!-- Right -->
+  <div>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-google"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <!-- Right -->
+  </section>
+  <section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3"></i>Company name
+        </h6>
+        <p>
+          Here you can use rows and columns to organize your footer content. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Products
+        </h6>
+        <p>
+          <a href="#!" class="text-reset">Angular</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">React</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Vue</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Laravel</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Useful links
+        </h6>
+        <p>
+          <a href="#!" class="text-reset">Pricing</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Settings</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Orders</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Help</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope me-3"></i>
+          info@example.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  © 2021 Copyright:
+  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+</footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="./js/ScrollToPlugin3.js"></script>
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/gsap-latest-beta.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+  <script src="./js/scroll-main.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js "></script>
+  <script src="js/jquery.translate.js"></script>
+  <script src="js/json-translate.js"></script>
 </body>
 
 </html>

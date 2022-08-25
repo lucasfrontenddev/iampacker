@@ -1,180 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Roboto+Mono:wght@300&display=swap");
+/*
 
-*{
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+    */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #b1b1b1;
-    background-color: #F3F6FF;
-    color: #28010d;
+  font-size: 60.5%;
+}
+body main .animation__container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /*
+  height: auto;
+  */
+}
+body main .animation__container .seccion {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+body main .animation__container .seccion:nth-child(1) {
+  background-color: #515151;
+}
+body main .animation__container .seccion:nth-child(1) svg text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  text-align: center;
+}
+body main .animation__container .seccion:nth-child(1) svg .presentation {
+  font-size: 1rem;
+}
+body main .animation__container .seccion:nth-child(1) svg .hello {
+  font-size: 3rem;
+  font-family: "Roboto Mono", monospace;
+}
+body main .animation__container .seccion:nth-child(3) {
+  background-color: rgba(43, 127, 196, 0.3294117647);
+  border-right: 5px black;
+}
+body main .animation__container .seccion:nth-child(4) {
+  background-color: aquamarine;
+}
+body footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #21282b;
 }
 
-.bg-color-orange {
-    background-color: orange;
-}
-
-.logo {
-    background-image: url("../assets/logo-cucharas.svg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    padding: 5px;
-    min-height: 50px;
-    min-width: 40px;
-
-    transition: all .3s ease-in-out;
-}
-
-.logo:hover{
-    transform: rotate(-180deg);
-}
-
-#hero{
-    background-image: url("../assets/a4.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    min-height: 90vh;
-}
-
-h1{
-    font-family: "Roboto";
-    font-size: 3rem;
-}
-
-h3{
-    font-size: 3rem;
-}
-
-.humo {
-    width: 100%;
-    height: 6px;
-    background: orange;
-    transform-origin: top, left;
-    animation: animacion_humo_bg 5s infinite ease-in-out;
-    
-}
-/*animacion humo*/
-@keyframes animacion_humo_bg {
-    0% {
-        transform: scale(.01,1);
-        transform-origin: left;
-        filter: blur(10px);
-    }
-
-    100% {
-        transform: scale(1,1);
-        transform-origin: left;
-        filter: blur(10px);
-    }
-}
-
-
-/* Galeria */
-
-.items{
-    min-width: 200px;
-    min-height: 200px;
-    background-size: cover; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Ibarra Real Nova', serif;
-    color: rgb(0, 0, 0);
-    background-color: #b1b1b1;
-    
-}
-
-.items:hover {
-    color: orange;
-    cursor: pointer;
-    filter: blur(1px);
-    transition:all 1.05s ease-in-out;    
-}
-
-.item1 {
-    background-image: url("../assets/a1.jpg");
-    background-image: no-repeat;
-    background-image: center;
-} 
-
-.item2 {
-    background-image: url("../assets/a2.jpg");
-    background-image: no-repeat;
-    background-image: center;
-} 
-
-.item3 {
-    background-image: url("../assets/a3.jpg");
-    background-image: no-repeat;
-    background-image: center;
-} 
-
-.item4 {
-    background-image: url("../assets/comidaveggie-backgroundimage.jpg");
-    background-image: no-repeat;
-    background-image: center;
-}
-
-.item5 {
-    background-image: url("../assets/a5.jpg");
-    background-image: no-repeat;
-    background-image: center;
-} 
-
-.item6 {
-    background-image: url("../assets/a6.jpg");
-    background-image: no-repeat;
-    background-image: center;
-}
-
-.item7 {
-    background-image: url("../assets/a7.jpg");
-    background-image: no-repeat;
-    background-image: center;
-}
-
-.item8 {
-    background-image: url("../assets/a8.jpg");
-    background-image: no-repeat;
-    background-image: center;
-}
-
-.item9 {
-    background-image: url("../assets/a9.jpg");
-    background-image: no-repeat;
-    background-image: center;
-}
-
-.ubicacion{
-    max-width: 300px;
-    max-height: 300px;
-}
-
-
-@media (max-width: 870px) {
-    #hero{
-        background-image: url("../assets/comidaveggie-backgroundimage.jpg");
-        background-size: cover; 
-        background-repeat: no-repeat;
-        min-height: 90vh;
-    }
-    .firma > p, .firma > p > .mi-nombre {
-        font-size: 0.8rem;
-    }
-    h1{
-        color: #F3F6FF;
-    }
-    h3{
-        background-color: whitesmoke;
-        border-radius: 3px;
-        text-align: center;
-        padding: 5px;
-    }
-    .humo{
-        display: none;
-    }
-  }
+/*# sourceMappingURL=styles.css.map */
