@@ -1,25 +1,40 @@
 let textAlert = 'You will be redirected to an external website for English language / Você será conduzido a uma página web externa para o Idioma Português';
 
 var dict = {
+    /* Navbar */
     'Home': {
-        pt: 'a Principal'
+        pt: 'a Principal',
+        fr: "",
+        es: 'Principal',
     },
-    /*Alert*/
+    /* Presentation */
     "Hello, my name is Lucas": {
-        pt: "Olá, meu nome é Lucas"
+        pt: "Olá, meu nome é Lucas",
+        fr: "bonjour, je m'appelle Lucas",
+        es: 'Hola, mi nombre es Lucas'
+
     },
 
     "I am": {
-        pt: "eu sou"
+        pt: "Eu sou",
+        fr: "Je suis",
+
     },
 
-    "Agencies State map": {
-        pt: "Mapa do Estado"
+    "I am an experienced skydiver (8 years).": {
+        pt: "Tenho 8 anos de experiência como paraquedista"
     },
 
     "Go to the online campus (in Spanish)": {
         pt: "vá para o campo virtual, em espanhol"
-    }
+    },
+    /* Presentation */
+    "Contact": {
+        pt: "Eu sou",
+        fr: "Je suis",
+        es: "Contacto"
+
+    },
 }
 
 function getUrlParameter(name) {
@@ -32,6 +47,10 @@ function getUrlParameter(name) {
 var translator = $('body').translate({ lang: "en", t: dict }); //use English
 if (getUrlParameter('lang') == 'pt') {
     translator.lang("pt");
+} if (getUrlParameter('lang') == 'fr') {
+    translator.lang("fr");
+} if (getUrlParameter('lang') == 'es') {
+    translator.lang("es");
 }
 
 $(document).ready(function(){
@@ -41,8 +60,18 @@ $(document).ready(function(){
             let viejoHREF = $(v).attr('href');
             $(v).attr('href', viejoHREF+'?lang=pt');
         });
-        $('.cepi-url').attr('href','https://so.jst.gob.ar/idiomasJST/');
+        $('.cepi-url').attr('href','#');
         $('.cepi-url').find('h3').text('Web - English');
+    } else {
+        if(getUrlParameter('lang') == 'fr'){
+            console.log('fr');
+            $('a').each(function(i,v){
+                let viejoHREF = $(v).attr('href');
+                $(v).attr('href', viejoHREF+'?lang=fr');
+            });
+            $('.cepi-url').attr('href','#');
+            $('.cepi-url').find('h3').text('Web - English');
+        }
     }
 })
 

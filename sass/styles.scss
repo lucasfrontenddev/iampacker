@@ -27,7 +27,21 @@ $colores-redes: (
 body{
     font-size: 60.5%;
 
-    .init{
+    header{
+        nav{
+            button{}
+            #menu{
+                ul{
+                    li{
+                        .logo{
+                            background-image: url('/assets/icono.png');
+                            min-height: 200px;
+                            min-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
     }
     main{
         .animation__container{
@@ -50,6 +64,12 @@ body{
                         font-family: 'Roboto Mono', monospace;
                         font-size:2rem;
                         text-align:center;
+                    }
+                    .hello{
+                        
+                    }
+                    .i_am{
+                        font-size:3rem;
                     }
                     .presentation{
                         font-size:1rem;
@@ -78,7 +98,7 @@ body{
                 border-right: 5px black;
             }
             .seccion:nth-child(4){
-                background-color: aquamarine;
+                background-color: rgba(2, 27, 164, 0.63);
             }
 
         }

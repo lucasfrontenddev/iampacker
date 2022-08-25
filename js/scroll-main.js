@@ -5,32 +5,56 @@ const tl = gsap.timeline();
 
 if (window.innerWidth > 800) {
     tl.from('.seccion__2', {yPercent: 100})
-tl.from('.seccion__3', {xPercent: -100})
-tl.from('.seccion__4', {xPercent: 100})
+    tl.from('.seccion__3', {xPercent: -100})
+    tl.from('.seccion__4', {xPercent: 100})
 
-.fromTo('.sky', {y:0},{y:-100}, 0)
-.fromTo('.cloud1', {y:100},{y:-800}, 0)
-.fromTo('.cloud2', {y:-150},{y:-500}, 0)
-.fromTo('.cloud3', {y:-50},{y:-650}, 0)
-.fromTo('.cloud4', {y:-80},{y:-900}, 0)
-.fromTo('.mountBg', {y:-10},{y:-100}, 0)
-.fromTo('.mountMg', {y:-30},{y:-250}, 0)
-.fromTo('.mountFg', {y:-50},{y:-600}, 0)
-.fromTo('.elemento1', {y:-50, scale: 2},{y:-600, scale: 1}, 0)
-.fromTo('.flag', {scale: 1},{scale: 1.2}, 0)
+    .fromTo('.sky', {y:0},{y:-100}, 0)
+    .fromTo('.cloud1', {y:100},{y:-800}, 0)
+    .fromTo('.cloud2', {y:-150},{y:-500}, 0)
+    .fromTo('.cloud3', {y:-50},{y:-650}, 0)
+    .fromTo('.cloud4', {y:-80},{y:-900}, 0)
+    .fromTo('.mountBg', {y:-10},{y:-100}, 0)
+    .fromTo('.mountMg', {y:-30},{y:-250}, 0)
+    .fromTo('.mountFg', {y:-50},{y:-600}, 0)
+    .fromTo('.elemento1', {y:-50, scale: 2},{y:-600, scale: 1}, 0)
+    .fromTo('.flag', {scale: 1},{scale: 1.2}, 0)
 
-ScrollTrigger.create({
-    animation: tl,
-    trigger: '.animation__container',
-    markers: true,
-    start: 'top top',
-    end:'+=6000', 
-    pin: true,
-    scrub: true
-})
+    ScrollTrigger.create({
+        animation: tl,
+        trigger: '.animation__container',
+        markers: false,
+        start: 'top top',
+        end:'+=6000', 
+        pin: true,
+        scrub: true
+    })
 
 } else {
 
+    tl.from('.seccion__2', {yPercent: 100})
+    tl.from('.seccion__3', {xPercent: -100})
+    tl.from('.seccion__4', {xPercent: 100})
+
+    .fromTo('.sky', {y:0},{y:-100}, 0)
+    .fromTo('.cloud1', {y:100},{y:-800}, 0)
+    .fromTo('.cloud2', {y:-150},{y:-500}, 0)
+    .fromTo('.cloud3', {y:-50},{y:-650}, 0)
+    .fromTo('.cloud4', {y:-80},{y:-900}, 0)
+    .fromTo('.mountBg', {y:-10},{y:-100}, 0)
+    .fromTo('.mountMg', {y:-30},{y:-250}, 0)
+    .fromTo('.mountFg', {y:-50},{y:-600}, 0)
+    .fromTo('.elemento1', {y:-50, scale: 2},{y:-600, scale: 1}, 0)
+    .fromTo('.flag', {scale: 1},{scale: 1.2}, 0)
+
+    ScrollTrigger.create({
+        animation: tl,
+        trigger: '.animation__container',
+        markers: false,
+        start: 'top top',
+        end:'+=6000', 
+        pin: true,
+        scrub: true
+    })
 }
 
 
